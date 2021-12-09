@@ -8,10 +8,8 @@
 
 void envia_informacoes_thingspeak(String string_dados);
 
-//const char* ssid     = "NOTE 10";
-//const char* password = "qady6829";
-const char* ssid     = "Procer Agrointeligência Publico";
-const char* password = "#agrosemperdas";
+const char* ssid     = "SATC IOT";
+const char* password = "IOT2021#";
 
 
 //configuração da api thingspeak
@@ -27,7 +25,7 @@ ESP8266WebServer server(80);
 String header;
 
 //variaveis para armazenar os estados dos pinos GPIO
-const int output0 = 16; //D0 = bal_verde
+const int output0 = 16; // D0 = bal_verde
 const int output1 = 5; // D1 = bal_vermelho
 const int output2 = 4; // D2 = pino_echo
 const int output3 = 0; // D3 = pino_trigger
@@ -167,7 +165,7 @@ void loop(void){
     }
 
     
-    if (cmMsec < 8 ) {//se a distancia for menor do que 8 centimetros luz vermelha deve permancer ligada
+    if (cmMsec < 8 ) { //se a distancia for menor do que 8 centimetros luz vermelha deve permancer ligada
       digitalWrite(bal_vermelho, HIGH); 
       digitalWrite(bal_verde, LOW);
       Serial.print("  Muito próximo do sensor"); //apresenta mensagem na tela de que distância é muito próxima do sensor
