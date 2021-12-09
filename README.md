@@ -1,7 +1,7 @@
 # IOT-2
 ABP IOT 2 - 2021
 
-# Sistema de gestão e controle das luzes de um aeródromo e balizador de aeronave no pit parada
+# Sistema de gestão e controle das luzes de um aeroporto e balizador de aeronave no pit
 
 Este projeto foi integrado a plataforma de IOT ThingSpeak e pode ser acesso pelo link: https://thingspeak.com/channels/1602478/sharing
 
